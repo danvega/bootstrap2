@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" media="all" href="theme/css/default.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+    <!-- This amazingness opens all links in a new tab. -->
+    <base target="_blank">
+    <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+    <slides class="layout-widescreen">
+
+        <!--
+            how many people here are
+            - web designers
+            - front end developers
+            - back end programmers
+        -->
+        <slide class="logoslide nobackground">
+            <article class="flexbox vcenter">
+                <span>
+                    <img src="images/bootstrap2_logo.png">
+                </span>
+            </article>
+        </slide>
+
+        <!--
+            Today's Agenda:
+            We have a lot of slides to get through
+            First time with this presentation + html5 slides
+
+
+            Why Responsive Design is so important
+
+        -->
+        <slide class="title-slide segue nobackground">
+            <aside class="gdbar">
+                <img src="images/bootstrap_128.png">
+            </aside>
+            <!-- The content of this hgroup is replaced programmatically through the
+            slide_config.json. -->
+            <hgroup class="auto-fadein">
+                <h1 data-config-title>
+                    <!-- populated from slide_config.json -->
+                </h1>
+                <h2 data-config-subtitle>
+                    <!-- populated from slide_config.json -->
+                </h2>
+                <p data-config-presenter>
+                    <!-- populated from slide_config.json -->
+                </p>
+            </hgroup>
+        </slide>
+
+        <!-- ABOUT ME -->
+        <slide>
+            <hgroup>
+                <h2>About Me</h2>
+            </hgroup>
+            <article class="smaller">
+                <div class="columns-2">
+                <ul>
+                    <li>Senior Developer at FirstComp</li>
+                    <li>Manager Cleveland Adobe User Group</li>
+                    <li>Adobe Community Professional</li>
+                    <li>Technology Geek</li>
+                    <li>
+                        What Keeps me busy
+                        <ul>
+                            <li>CrossFit / Running</li>
+                            <li>Poker</li>
+                            <li>Sports</li>
+                        </ul>
+                    </li>
+                    <li>Toys For Shots</li>
+                    <li>
+                        <b class="blue">Contact Information</b>
+                        <ul>
+                            <li>www: http://www.danvega.org</li>
+                            <li>email: danvega@gmail.com</li>
+                            <li>twitter: @cfaddict</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div align="center">
+                    <br/><br/>
+                    <img src="images/firstcomp.png" alt=""><br/><br/>
+                    <img src="images/acp_logo.gif"><br/><br/>
+                    <img src="images/toysforshotslogo.jpg">
+                </div>
+
+                </div>
+            </article>
+        </slide>
+
+        <!--
+        <slide class="title-slide segue nobackground">
+            <aside class="gdbar">
+                <img src="images/bootstrap_128.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h1>
+                    Web Development In The Past
+                </h1>
+                <h2>
+                   It used to be simplified.
+                </h2>
+            </hgroup>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>The Web Browser</h2>
+            </hgroup>
+
+            <article class="flexbox vcenter">
+                <img src="images/netscape.jpg" height="500">
+            </article>
+
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Web development used to be simplified</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;HTML&gt;
+&lt;HEAD&gt;
+    &lt;TITLE&gt;Apple Computer&lt;/TITLE&gt;
+    <b>&lt;script type=&quot;text/javascript&quot;&gt;
+    window.onload = function(e){
+      var elements = document.getElementsByTagName(&quot;H1&quot;);
+      elements[0].style.color = &#39;red&#39;;
+    }
+    &lt;/script&gt;</b>
+&lt;/HEAD&gt;
+&lt;BODY
+    BACKGROUND=&quot;http://www4.apple.com/home/elements/back.gif&quot;
+    BGCOLOR=&quot;FFFFFF&quot;&gt;
+    &lt;h1&gt;Welcome to Apple Computers&lt;/h1&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;
+</pre>
+            </article>
+        </slide>
+
+        <slide class="segue blue quote nobackground">
+            <article class="flexbox vleft auto-fadein">
+                <q>
+                    It's the only language that I'm aware of that people feel they don't need to learn before they start using it.
+                </q>
+              <div class="author">
+                    Douglas Crockford
+                </div>
+            </article>
+        </slide>
+        -->
+
+        <!--
+            Web development Today
+
+            Remember back when there was only 1 web browser
+            If you could spell html you could get a job
+        -->
+        <slide class="title-slide segue nobackground">
+            <aside class="gdbar">
+                <img src="images/bootstrap_128.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h1>
+                    Web Development
+                </h1>
+                <h2>
+                   We face a lot of challenges
+                </h2>
+            </hgroup>
+        </slide>
+
+        <!-- WEB BROWSERS -->
+        <slide>
+            <hgroup>
+                <h2>Web Browsers</h2>
+            </hgroup>
+            <article class="flexbox vcenter">
+                <img src="images/browser_stats.jpg"><br/>
+            </article>
+            <aside class="note">
+                <section>
+                <ul>
+                    <li>Browser Vendors & Versions</li>
+                    <li>Screen Resolutions</li>
+                    <li>Operating Systems</li>
+                </ul>
+                </section>
+            </aside>
+        </slide>
+
+        <!-- NO IE6 -->
+        <slide>
+            <article class="flexbox vcenter">
+                <img src="images/noie6.png"><br/>
+            </article>
+            <aside class="note">
+                <section>
+                    <ul>
+                        <li>Bootstrap does not support IE6</li>
+                    </ul>
+                </section>
+            </aside>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Today's Web Developer</h2>
+            </hgroup>
+            <article>
+                <ul class="build">
+                    <li>
+                       HTML5
+                       <ul>
+                           <li>Canvas / Semantics/ Storage / File Access / Audio / Video</li>
+                       </ul>
+                    </li>
+                    <li>
+                        CSS / 3
+                        <ul>
+                            <li>LESS / Sass / @font-face / Border Radius / Box Shadow</li>
+                        </ul>
+                    </li>
+                    <li>
+                        JavaScript
+                        <ul>
+                            <li>jQuery / Plugins / MVC Frameworks / Server Side JS / CoffeeScript</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Server Side Languages
+                        <ul>
+                            <li>ColdFusion / Java / Groovy / PHP / Python / .NET / Ruby</li>
+                        </ul>
+                    </li>
+                    <li>
+                        DBMS
+                        <ul>
+                            <li>Oracle / SQL Server / MySQL / Postgre SQL </li>
+                        </ul>
+                    </li>
+                    <li>
+                        NOSQL Databases
+                        <ul>
+                            <li>Cassandra / MongoDB / CouchDB / Amazon Simple DB </li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </slide>
+
+        <slide class="fill nobackground" style="background-image: url(images/Cuddling_with_multiple_devices.jpg)">
+            <article>
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Mobile Traffic will outnumber desktop by 2014</h2>
+            </hgroup>
+            <article class="flexbox vcenter">
+                <img src="images/mobile_vs_desktop_usage.png" width="850">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Mobile OS</h2>
+            </hgroup>
+            <article class="flexbox vcenter">
+                <img src="images/mobile_os.jpg" alt="">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Mobile Screen Resolutions</h2>
+            </hgroup>
+            <article class="flexbox vcenter">
+                <img src="images/mobile_screens.jpg" alt="">
+            </article>
+        </slide>
+
+        <slide class="segue blue quote nobackground">
+            <article class="flexbox vcenter auto-fadein">
+                <q>
+                    Designing a different interface for every device is impossible.
+                    <!-- not considering these devices though is a big mistake -->
+                </q>
+            </article>
+        </slide>
+
+        <!-- I don't do pretty (Ray Camden) -->
+        <slide class="fill nobackground" style="background-image: url(images/adobedotcom.png)">
+            <article>
+            </article>
+        </slide>
+
+        <!-- this is where we ask for a show of hands, who has heard of it, etc.. -->
+        <slide class="title-slide segue nobackground">
+            <aside class="gdbar">
+                <img src="images/bootstrap_128.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h1>
+                    Bootstrap 2.0
+                </h1>
+                <h2>
+                   The answer to our problems.
+                </h2>
+            </hgroup>
+        </slide>
+
+        <!-- talk about what bootstrap is here -->
+        <slide class="title-slide segue nobackground">
+            <article>
+                <img src="images/bootstrap_homepage.png">
+                <img src="images/introducing_bootstrap.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>What is Bootstrap</h2>
+            </hgroup>
+            <article class="smaller">
+                <div class="columns-2">
+
+                    <ul>
+                        <li>
+                            <b class="blue">Scaffolding</b>
+                            <ul>
+                                <li>Layouts</li>
+                                <li>Grid System</li>
+                                <li>Fluid Grid System</li>
+                                <li>Responsive Design</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="blue">Base CSS</b>
+                            <ul>
+                                <li>Typography</li>
+                                <li>Tables</li>
+                                <li>Forms</li>
+                                <li>Buttons</li>
+                                <li>Icons</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <br/><br/>
+
+                    <ul>
+                        <li>
+                            <b class="blue">Components</b>
+                            <ul>
+                                <li>Dozens of reusable components</li>
+                                <li>Dropdowns</li>
+                                <li>Navbar</li>
+                                <li>Breadcrumbs</li>
+                                <li>Alerts</li>
+                                <li>Progress Bars</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="blue">JavaScript Plugins</b>
+                            <ul>
+                                <li>13 plugins</li>
+                                <li>Modal Dialog Windows</li>
+                                <li>Tabs</li>
+                                <li>Typeahead</li>
+                                <li>Carousel</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Reasons To Love Bootstrap</h2>
+            </hgroup>
+            <article>
+              <div class="columns-2">
+                <ul>
+                    <li>For all skill levels</li>
+                    <li>Documentation</li>
+                    <li>Cross Everything</li>
+                    <li>Lightweight</li>
+                    <li>Responsive Design</li>
+                    <li>Custom jQuery plugins</li>
+                    <li>Open Source</li>
+                    <li>Built on LESS</li>
+                </ul>
+                <div align="right">
+                    <img src="images/homer_donut.jpg">
+                </div>
+              </div>
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>History of Bootstrap</h2>
+            </hgroup>
+            <article>
+                <div class="columns-2">
+                    <ul>
+                        <li>
+                            Early Days of Twitter
+                            <ul>
+                                <li>Mark Otto</li>
+                                <li>Jacob Thornton</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Releases
+                            <ul>
+                                <li>v 1.0 - 08/19/2011</li>
+                                <li>v 2.0 - 01/31/2012</li>
+                                <li>v 2.1.1 - 09/04/2012</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Popularity
+                            <ul>
+                                <li>@twbootstrap 38.6K Followers</li>
+                                <li>
+                                    github Stats
+                                    <ul>
+                                        <li>39K Watchers</li>
+                                        <li>9K Forks</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div align="right">
+                        <img src="images/mark_jacob.jpg">
+                    </div>
+                </div>
+
+            </article>
+        </slide>
+
+        <slide class="title-slide segue nobackground">
+            <aside class="gdbar">
+                <img src="images/bootstrap_128.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h1>
+                    Getting Started
+                </h1>
+                <h2>
+                   Overview of the project, its contents, and how to get started with a simple template.
+                </h2>
+            </hgroup>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Getting Started</h2>
+            </hgroup>
+            <article>
+              <div class="columns-2">
+                <ul>
+                    <li>
+                        Downloading Bootstrap
+                        <ul>
+                            <li>Source</li>
+                            <li>Ready To Go</li>
+                            <li>Customize</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Requirements
+                        <ul>
+                            <li>HTML5 Doctype</li>
+                            <li>Include Boostrap.css</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Starter Templates
+                        <ul>
+                            <li>Basic marketing site</li>
+                            <li>Fluid layout</li>
+                            <li>Starter template</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div align="right">
+                    <img src="images/HTML5_Logo_256.png"><br/>
+                    <img src="images/templates.png">
+                </div>
+              </div>
+            </article>
+        </slide>
+
+        <slide class="title-slide segue nobackground">
+            <aside class="gdbar">
+                <img src="images/bootstrap_128.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h1>
+                    Demo Time
+                </h1>
+                <h2>
+                   <a href="http://twitter.github.com/bootstrap/index.html">http://twitter.github.com/bootstrap/index.html</a>
+                </h2>
+            </hgroup>
+        </slide>
+
+
+        <slide class="title-slide segue nobackground">
+            <aside class="gdbar">
+                <img src="images/bootstrap_128.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h1>
+                    Scaffolding
+                </h1>
+                <h2>
+                   Bootstrap is built on responsive 12-column grids, layouts, and components.
+                </h2>
+            </hgroup>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Layouts: Fixed Layout</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/body&gt;
+</pre>
+                <img src="images/fixed_layout.png" alt="">
+            </article>
+            <aside class="note">
+                <section>
+                    <ul>
+                        <li>940px</li>
+                        <li>12-column grid</li>
+                    </ul>
+                </section>
+            </aside>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Layouts: Fluid Layout</h2>
+            </hgroup>
+            <article class="smaller">
+<pre class="prettyprint" data-lang="html">
+<b>&lt;div class=&quot;container-fluid&quot;&gt;</b>
+  &lt;div class=&quot;row-fluid&quot;&gt;
+    &lt;div class=&quot;span2&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;span10&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                <img src="images/fluid_layout.png" alt="">
+            </article>
+            <aside class="note">
+                <section>
+                    <ul>
+                        <li>Fluid != Responsive</li>
+                    </ul>
+                </section>
+            </aside>
+        </slide>
+
+        <!--
+            I hope nobody is still using tables for layout
+        -->
+        <slide>
+            <hgroup>
+                <h2>Grid System</h2>
+            </hgroup>
+            <article class="smaller">
+                <img src="images/grid_system.png" alt="">
+                <br/><br/>
+                <ul>
+                    <li>Bootstrap grid system is 12 columns / 940px</li>
+                    <li>Grid adapts to be 724px and 1170px wide depending on your viewport.</li>
+                    <li>Below 767px viewports, the columns become fluid and stack vertically.</li>
+                </ul>
+<pre class="prettyprint" data-lang="html">
+&lt;div class=&quot;<b>row</b>&quot;&gt;
+    &lt;div class=&quot;<b>span4</b>&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;<b>span4</b>&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;<b>span4</b>&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</pre>                
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Fluid Grid System</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;div class=&quot;<b>row-fluid</b>&quot;&gt;
+    &lt;div class=&quot;span4&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;span4&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;span4&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;<b>row-fluid</b>&quot;&gt;
+    &lt;div class=&quot;span6&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;span6&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;<b>row-fluid</b>&quot;&gt;
+    &lt;div class=&quot;span4&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;span4&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;span4&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Responsive Design</h2>
+            </hgroup>
+            <article>
+                <ul>
+                    <li>Media Queries</li>
+                    <li>Modify the width of column in our grid</li>
+                    <li>Stack elements instead of float wherever necessary</li>
+                    <li>Resize headings and text to be more appropriate for devices</li>
+                </ul>
+                <img src="images/responsive.jpg">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Responsive Design</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+<b>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</b>
+&lt;title&gt;Bootstrap: Getting Started&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bootstrap/css/bootstrap.min.css&quot;&gt;
+<b>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/bootstrap-responsive.css&quot; &gt;</b>
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Responsive Bootstrap&lt;/h1&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+            </article>
+        </slide>
+
+
+        <slide class="title-slide segue nobackground">
+            <aside class="gdbar">
+                <img src="images/bootstrap_128.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h1>
+                    Demo Time
+                </h1>
+                <h2>
+                   <a href="http://localhost/bootstrap2/demos/responsive/">http://localhost/bootstrap2/demos/responsive/</a>
+                </h2>
+            </hgroup>
+        </slide>
+
+        <slide class="title-slide segue nobackground">
+            <aside class="gdbar">
+                <img src="images/bootstrap_128.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h1>
+                    Base CSS
+                </h1>
+                <h2>
+                   Fundamental HTML elements styled and enhanced with extensible classes.
+                </h2>
+            </hgroup>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Typography: Headings</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;h1&gt;h1. Heading 1&lt;/h1&gt;
+&lt;h2&gt;h2. Heading 2&lt;/h2&gt;
+&lt;h3&gt;h3. Heading 3&lt;/h3&gt;
+&lt;h4&gt;h4. Heading 4&lt;/h4&gt;
+&lt;h5&gt;h5. Heading 5&lt;/h5&gt;
+&lt;h6&gt;h6. Heading 6&lt;/h6&gt;
+</pre>
+                <img src="images/headings.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Typography: Body Copy</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi
+erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus
+auctor fringilla.&lt;/p&gt;
+</pre>
+                <img src="images/bodycopy.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Typography: Blockquote</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;blockquote&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+  &lt;small&gt;Someone famous &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/small&gt;
+&lt;/blockquote&gt;
+</pre>
+                <img src="images/blockquote.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Typography: Emphasis classes</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;p class=&quot;muted&quot;&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.&lt;/p&gt;
+&lt;p class=&quot;text-warning&quot;&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
+&lt;p class=&quot;text-error&quot;&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;
+&lt;p class=&quot;text-info&quot;&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.&lt;/p&gt;
+&lt;p class=&quot;text-success&quot;&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;/p&gt;
+</pre>
+                <img src="images/emphasis.png">
+            </article>
+        </slide>
+
+
+        <slide>
+            <hgroup>
+                <h2>Typography: Lists</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;ul&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+...
+&lt;/ul&gt;
+</pre>
+                <img src="images/lists.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Tables: Default Style</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;table class=&quot;table&quot;&gt;
+…
+&lt;/table&gt;
+</pre>
+                <img src="images/table_default.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Tables: Striped</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;table class=&quot;table table-striped&quot;&gt;
+…
+&lt;/table&gt;
+</pre>
+                <img src="images/table_striped.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Tables: Bordered</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;table class=&quot;table table-bordered&quot;&gt;
+…
+&lt;/table&gt;
+</pre>
+                <img src="images/table_bordered.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Tables: Hover</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;table class=&quot;table table-hover&quot;&gt;
+…
+&lt;/table&gt;
+</pre>
+                <img src="images/table_hover.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Tables: Condensed</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;table class=&quot;table table-condensed&quot;&gt;
+…
+&lt;/table&gt;
+</pre>
+                <img src="images/table_condensed.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Tables: Optional Row Classes</h2>
+            </hgroup>
+            <article>
+                <img src="images/table_optional.png">
+            </article>
+        </slide>
+
+
+        <!--FORMS -->
+
+        <slide>
+            <hgroup>
+                <h2>Forms</h2>
+            </hgroup>
+            <article class="smaller">
+                <div class="columns-2">
+                    <ul>
+                        <li>
+                            Four Layouts
+                            <ul>
+                                <li>Vertical (default)</li>
+                                <li>Search</li>
+                                <li>Inline</li>
+                                <li>Horizontal</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Form Controls
+                            <ul>
+                                <li>Input</li>
+                                <li>Text Area</li>
+                                <li>Checkboxes & Radio</li>
+                                <li>Select</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Look & Feel
+                            <ul>
+                                <li>Relative Sizing (small/med/large/xlarge)</li>
+                                <li>Grid Sizing (span1/span2/span3/etc)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="clear">&nbsp;</div>
+                    <div align="right">
+                        <img src="images/forms.jpg" style="border:2px solid #666;padding:10px;">
+                    </div>
+                </div>
+            </article>
+        </slide>
+
+
+        <slide>
+            <hgroup>
+                <h2>Forms: Default Styles</h2>
+            </hgroup>
+            <article class="smaller">
+<pre class="prettyprint" data-lang="html">
+&lt;form&gt;
+    &lt;legend&gt;Legend&lt;/legend&gt;
+    &lt;label&gt;Label name&lt;/label&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Type something…&quot;&gt;
+    &lt;span class=&quot;help-block&quot;&gt;Example block-level help text here.&lt;/span&gt;
+    &lt;label class=&quot;checkbox&quot;&gt;
+        &lt;input type=&quot;checkbox&quot;&gt; Check me out
+    &lt;/label&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;btn&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+                <img src="images/form_default.png">
+            </article>
+            <aside class="note">
+                <section>
+                    <ul>
+                        <li>Left Aligned, stacked form controls</li>
+                    </ul>
+                </section>
+            </aside>
+        </slide>
+
+          <slide>
+            <hgroup>
+                <h2>Forms: Horizontal</h2>
+            </hgroup>
+            <article class="smaller">
+<pre class="prettyprint" data-lang="html">
+&lt;form class=&quot;<b>form-horizontal</b>&quot;&gt;
+    &lt;div class=&quot;control-group&quot;&gt;
+    &lt;label class=&quot;control-label&quot; for=&quot;inputEmail&quot;&gt;Email&lt;/label&gt;
+    &lt;div class=&quot;controls&quot;&gt;
+      &lt;input type=&quot;text&quot; id=&quot;inputEmail&quot; placeholder=&quot;Email&quot;&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    ...
+&lt;/form&gt;
+</pre>
+                <img src="images/form_horizontal.png">
+            </article>
+            <aside class="note">
+                <section>
+                    <ul>
+                        <li>Add .form-horizontal to the form</li>
+                        <li>Wrap labels and controls in .control-group</li>
+                        <li>Add .control-label to the label</li>
+                        <li>Wrap any associated controls in .controls for proper alignment</li>
+                    </ul>
+                </section>
+            </aside>
+        </slide>          
+
+        <slide>
+            <hgroup>
+                <h2>Search Form</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;form class=&quot;form-search&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;input-medium <b>search-query</b>&quot;&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;btn&quot;&gt;Search&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+                <img src="images/form_search.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Inline Form</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;form class=&quot;<b>form-inline</b>&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;input-small&quot; placeholder=&quot;Email&quot;&gt;
+    &lt;input type=&quot;password&quot; class=&quot;input-small&quot; placeholder=&quot;Password&quot;&gt;
+    &lt;label class=&quot;checkbox&quot;&gt;
+        &lt;input type=&quot;checkbox&quot;&gt; Remember me
+    &lt;/label&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;btn&quot;&gt;Sign in&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+                <img src="images/form_inline.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Form Controls: Relative Sizing</h2>
+            </hgroup>
+            <article class="smaller">
+<pre class="prettyprint" data-lang="html">
+&lt;input class=&quot;<b>input-mini</b>&quot; type=&quot;text&quot; placeholder=&quot;.input-mini&quot;&gt;
+&lt;input class=&quot;<b>input-small</b>&quot; type=&quot;text&quot; placeholder=&quot;.input-small&quot;&gt;
+&lt;input class=&quot;<b>input-medium</b>&quot; type=&quot;text&quot; placeholder=&quot;.input-medium&quot;&gt;
+&lt;input class=&quot;<b>input-large</b>&quot; type=&quot;text&quot; placeholder=&quot;.input-large&quot;&gt;
+&lt;input class=&quot;<b>input-xlarge</b>&quot; type=&quot;text&quot; placeholder=&quot;.input-xlarge&quot;&gt;
+&lt;input class=&quot;<b>input-xxlarge</b>&quot; type=&quot;text&quot; placeholder=&quot;.input-xxlarge&quot;&gt;
+</pre>
+                <img src="images/form_controls_relative.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Form Controls: Grid Sizing</h2>
+            </hgroup>
+            <article class="smaller">
+<pre class="prettyprint" data-lang="html">
+&lt;input class=&quot;<b>span1</b>&quot; type=&quot;text&quot; placeholder=&quot;.span1&quot;&gt;
+&lt;input class=&quot;<b>span2</b>&quot; type=&quot;text&quot; placeholder=&quot;.span2&quot;&gt;
+&lt;input class=&quot;<b>span3</b>&quot; type=&quot;text&quot; placeholder=&quot;.span3&quot;&gt;
+&lt;select class=&quot;<b>span1</b>&quot;&gt;&lt;/select&gt;
+&lt;select class=&quot;<b>span2</b>&quot;&gt;&lt;/select&gt;
+&lt;select class=&quot;<b>span3</b>&quot;&gt;&lt;/select&gt;
+</pre>
+                <img src="images/form_controls_grid.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Buttons</h2>
+            </hgroup>
+            <article>
+                <img src="images/buttons.png">
+            </article>
+            <aside class="note">
+                <section>
+                    <ul>
+                        <li>Different Sizes</li>
+                        <li>Enabled / Disabled States</li>
+                        <li>One Button, many classes</li>
+                    </ul>
+                </section>
+            </aside>
+        </slide>
+
+
+        <slide>
+            <hgroup>
+                <h2>Images</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;img src=&quot;...&quot; class=&quot;img-rounded&quot;&gt;
+&lt;img src=&quot;...&quot; class=&quot;img-circle&quot;&gt;
+&lt;img src=&quot;...&quot; class=&quot;img-polaroid&quot;&gt;
+</pre>
+                <img src="images/images.png">
+                <br/><br/>
+                <footer class="source">
+                    <span class="red">.img-rounded and .img-circle do not work in IE7-8 due to lack of border-radius support.</span><br/><br/>
+                    Image Placeholders <a href="http://placehold.it/">http://placehold.it/</a></p>
+                </footer>
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Icons</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;icon-search icon-white&quot;&gt;&lt;/i&gt;
+
+&lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-user icon-white&quot;&gt;&lt;/i&gt; User&lt;/a&gt;
+&lt;a class=&quot;btn btn-small&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+&lt;span class=&quot;add-on&quot;&gt;&lt;i class=&quot;icon-envelope&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;input class=&quot;span2&quot; id=&quot;inputIcon&quot; type=&quot;text&quot;&gt;
+</pre>
+                <img src="images/icons.png">
+                <footer class="source">
+                    Full List of 140 Icons <a href="http://twitter.github.com/bootstrap/base-css.html#icons">http://twitter.github.com/bootstrap/base-css.html#icons</a>
+                    <br/><br/>
+                    Compressed using ImageOptim <a href="http://imageoptim.com/">http://imageoptim.com/</a>
+                </footer>
+            </article>
+        </slide>
+
+        <slide class="title-slide segue nobackground">
+            <aside class="gdbar">
+                <img src="images/bootstrap_128.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h1>
+                    Components
+                </h1>
+                <h2>
+                   Dozens of reusable components built to provide navigation, alerts, popovers, and more.
+                </h2>
+            </hgroup>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Components</h2>
+            </hgroup>
+            <article class="smaller">
+                <div class="columns-2">
+                    <ul>
+                        <li>Dropdowns</li>
+                        <li>Button groups</li>
+                        <li>Button dropdowns</li>
+                        <li>Navs</li>
+                        <li>Navbar</li>
+                        <li>Breadcrumbs</li>
+                        <li>Pagination</li>
+                        <li>Labels and badges</li>
+                        <li>Typography</li>
+                        <li>Thumbnails</li>
+                        <li>Alerts</li>
+                        <li>Progress bars</li>
+                        <li>Misc</li>
+                    </ul>
+                    <div align="right">
+                        <img src="images/components.jpg">
+                    </div>                    
+                </div>
+
+            </article>
+            <aside class="note">
+                <section>
+                    <ul>
+                        <li>No Functionality</li>
+                    </ul>
+                </section>
+            </aside>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Components: Button Group</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button class=&quot;btn&quot;&gt;1&lt;/button&gt;
+    &lt;button class=&quot;btn&quot;&gt;2&lt;/button&gt;
+    &lt;button class=&quot;btn&quot;&gt;3&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+                <img src="images/buttongroup.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Components: Button dropdown</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;div class=&quot;btn-group&quot;&gt;
+&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;
+    Action
+    &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;!-- dropdown menu links --&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+                <img src="images/buttondropdown.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Components: Navbar</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;div class=&quot;navbar&quot;&gt;
+  &lt;div class=&quot;navbar-inner&quot;&gt;
+    &lt;a class=&quot;brand&quot; href=&quot;#&quot;&gt;Title&lt;/a&gt;
+    &lt;ul class=&quot;nav&quot;&gt;
+      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;     
+</pre>
+                <img src="images/navbar.png">
+            </article>
+        </slide>   
+
+        <slide>
+            <hgroup>
+                <h2>Components: Tabs</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;ul class=&quot;nav nav-tabs&quot;&gt;
+&lt;li class=&quot;active&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+                <img src="images/tabs.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Components: Breadcrumbs</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;ul class=&quot;breadcrumb&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt; &lt;span class=&quot;divider&quot;&gt;/&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt; &lt;span class=&quot;divider&quot;&gt;/&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&quot;active&quot;&gt;Data&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+                <img src="images/breadcrumbs.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Components: Pagination</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;div class=&quot;pagination&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Prev&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+                <img src="images/pagination.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>Components: Alerts</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;div class=&quot;alert alert-success&quot;&gt;
+&lt;/div&gt;
+</pre>
+                <img src="images/alert.png">
+                <img src="images/alert_success.png">
+                <img src="images/alert_error.png">
+                <img src="images/alert_info.png">
+            </article>
+            <aside class="note">
+                <section>
+                    <ul>
+                        <li>Multiline blocks class="alert-block"</li>
+                    </ul>
+                </section>
+            </aside>
+        </slide>
+
+        <slide class="title-slide segue nobackground">
+            <aside class="gdbar">
+                <img src="images/bootstrap_128.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h1>
+                   JavaScript for Bootstrap
+                </h1>
+                <h2>
+                   Bring Bootstrap's components to life—now with 13 custom jQuery plugins.
+                </h2>
+            </hgroup>
+        </slide>
+
+        <!--
+            Should I use jQuery plugins or Bootstrap plugins
+        -->
+        <slide>
+            <hgroup>
+                <h2>JavaScript Plugins: Overview</h2>
+            </hgroup>
+            <article class="smaller">
+                <ul>
+                    <li>All plugins require the latest version of jQuery</li>                        
+                    <li>
+                        What Plugins do you need?
+                        <ul>
+                            <li>bootstrap.min.js (all)</li>
+                            <li><a href="https://github.com/twitter/bootstrap/tree/master/js">https://github.com/twitter/bootstrap/tree/master/js</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Plugins
+                        <ul>
+                            <li>Transitions</li>
+                            <li>Modal</li>
+                            <li>Button / Dropdown</li>
+                            <li>Tab</li>
+                            <li>Tooltip / Popover</li>
+                            <li>Alert</li>
+                            <li>Collapse</li>
+                            <li>Carousel</li>
+                            <li>Typeahead</li>
+                            <li>Scrollspy / Affix</li>
+                        </ul>
+                    </li>   
+                </ul>
+            </article>
+        </slide>
+
+        <!--
+            Really talk about how cool this is and how jQuery plugins work
+        -->
+        <slide class="segue blue quote nobackground">
+            <article class="flexbox vleft auto-fadein">
+                <q>
+                    You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript.
+                </q>
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>JavaScript Plugins: Modals</h2>
+            </hgroup>
+            <article>
+                <img src="images/modal.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>JavaScript Plugins: Modals</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;div class=&quot;modal hide fade&quot;&gt;
+    &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;h3&gt;Modal header&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;One fine body…&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Close&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>JavaScript Plugins: Carousel</h2>
+            </hgroup>
+            <article>
+                <img src="images/carousel.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>JavaScript Plugins: Carousel</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;div id=&quot;myCarousel&quot; class=&quot;carousel slide&quot;&gt;
+    &lt;!-- Carousel items --&gt;
+    &lt;div class=&quot;carousel-inner&quot;&gt;
+        &lt;div class=&quot;active item&quot;&gt;…&lt;/div&gt;
+        &lt;div class=&quot;item&quot;&gt;…&lt;/div&gt;
+        &lt;div class=&quot;item&quot;&gt;…&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Carousel nav --&gt;
+    &lt;a class=&quot;carousel-control left&quot; href=&quot;#myCarousel&quot; data-slide=&quot;prev&quot;&gt;&amp;lsaquo;&lt;/a&gt;
+    &lt;a class=&quot;carousel-control right&quot; href=&quot;#myCarousel&quot; data-slide=&quot;next&quot;&gt;&amp;rsaquo;&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>JavaScript Plugins: Popover</h2>
+            </hgroup>
+            <article>
+                <img src="images/popover.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>JavaScript Plugins: Popover</h2>
+            </hgroup>
+            <article>
+<pre class="prettyprint" data-lang="html">
+&lt;a href=&quot;#&quot;
+      class=&quot;btn btn-large btn-danger&quot;
+      rel=&quot;popover&quot;
+      data-content=&quot;And here&#39;s some amazing content. It&#39;s very engaging. right?&quot;
+      data-original-title=&quot;A Title&quot;&gt; 
+Click to toggle popover
+&lt;/a&gt;
+</pre>
+            <footer class="source">
+                See it in action <a href="http://twitter.github.com/bootstrap/javascript.html#popovers">http://twitter.github.com/bootstrap/javascript.html#popovers</a>
+            </footer>
+            </article>
+        </slide>
+
+        <!-- LESS -->
+        <slide class="title-slide segue nobackground">
+            <aside class="gdbar">
+                <img src="images/bootstrap_128.png">
+            </aside>
+            <hgroup class="auto-fadein">
+                <h1>
+                   LESS
+                </h1>
+                <h2>
+                    The dynamic stylesheet language.
+                </h2>
+            </hgroup>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>What is LESS?</h2>
+            </hgroup>
+            <article>
+                <div class="columns-2">
+                    <ul>
+                        <li>Maintainable CSS</li>
+                        <li>
+                            Dynamic Behavior
+                            <ul>
+                                <li>Variables</li>
+                                <li>Mixins</li>
+                                <li>Nested Elements</li>
+                                <li>Operations</li>
+                                <li>Functions</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Usage
+                            <ul>
+                                <li>Client Side</li>
+                                <li>Server Side</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div align="right">
+                        <img src="images/lesscss.png">
+                    </div>
+                </div>
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>LESS: Variables</h2>
+            </hgroup>
+            <article>
+                <p>Variables allow you to specify widely used values in a single place, and then re-use them throughout the style sheet, making global changes as easy as changing one line of code.</p>
+                <img src="images/less_variables.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>LESS: Mixins</h2>
+            </hgroup>
+            <article>
+                <p>Mixins allow you to embed all the properties of a class into another class by simply including the class name as one of its properties. It’s just like variables, but for whole classes. Mixins can also behave like functions, and take arguments, as seen in the example bellow.</p>
+                <img src="images/less_mixins.png">
+            </article>
+        </slide>
+
+        <slide>
+            <hgroup>
+                <h2>LESS: Nested</h2>
+            </hgroup>
+            <article>
+                <p>Rather than constructing long selector names to specify inheritance, in Less you can simply nest selectors inside other selectors. This makes inheritance clear and style sheets shorter.</p>
+                <img src="images/less_nested.png">
+            </article>
+        </slide>
+
+        <!-- LOOK AND FEEL -->
+        <slide>
+            <hgroup>
+                <h2>Look & Feel</h2>
+            </hgroup>
+            <article>
+                <ul>
+                    <li>
+                        Built With Bootstrap
+                        <ul>
+                            <li><a href="http://builtwithbootstrap.com">http://builtwithbootstrap.com</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Font Awesome
+                        <ul>
+                            <li><a href="http://fortawesome.github.com/Font-Awesome">http://fortawesome.github.com/Font-Awesome</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Kickstrap
+                        <ul>
+                            <li><a href="http://getkickstrap.com">http://getkickstrap.com</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Bootswatch
+                        <ul>
+                            <li><a href="http://bootswatch.com">http://bootswatch.com</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        jQuery UI theme
+                        <ul>
+                            <li><a href="http://addyosmani.github.com/jquery-ui-bootstrap">http://addyosmani.github.com/jquery-ui-bootstrap</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </slide>
+
+        <!-- RESOURCES -->
+        <slide>
+            <hgroup>
+                <h2>Resources</h2>
+            </hgroup>
+            <article>
+                <ul>
+                    <li>
+                        My Presentations
+                        <ul>
+                            <li><a href="http://www.danvega.org/presentations">http://www.danvega.org/presentations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Bootstrap
+                        <ul>
+                            <li><a href="http://twitter.github.com/bootstrap">http://twitter.github.com/bootstrap</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Bootstrap Google Group
+                        <ul>
+                            <li><a href="http://bit.ly/KTUw1o">http://bit.ly/KTUw1o</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        LESS CSS
+                        <ul>
+                            <li><a href="http://lesscss.org">http://lesscss.org</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Google HTML5 Slides
+                        <ul>
+                            <li><a href="http://code.google.com/p/io-2012-slides">http://code.google.com/p/io-2012-slides</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </slide>
+
+        <!-- THANK YOU / Questions -->
+        <slide class="thank-you-slide segue nobackground">
+            <aside class="gdbar right">
+                <img src="images/bootstrap_128.png">
+            </aside>
+            <article class="flexbox vleft auto-fadein">
+                <h2>
+                    &lt;Thank You!&gt;
+                </h2>
+                <p>
+                    Please feel free to ask any questions.
+                </p>
+            </article>
+            <p class="auto-fadein" data-config-contact>
+                <!-- populated from slide_config.json -->
+            </p>
+        </slide>
+        <slide class="backdrop">
+        </slide>
+    </slides>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+@bg: #000;
+@text-color: #fff;
+
+.rounded-corners (@radius: 10px) {
+	border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+}
+
+#header {
+	.rounded-corners;
+	background: @bg;
+	padding:10px;
+	color: @text-color;
+}
+#content {
+	margin:20px;
+}
+#footer {
+	.rounded-corners(20px);
+	background: @bg;
+	padding:10px;
+	color: @text-color;
+}
