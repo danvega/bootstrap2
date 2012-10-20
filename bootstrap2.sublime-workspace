@@ -1,0 +1,759 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"html",
+				"html	html"
+			],
+			[
+				"repe",
+				"repeat-x"
+			],
+			[
+				"showSub",
+				"showSubscribeForm"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"list-style",
+				"list-style-type"
+			],
+			[
+				"structkey",
+				"structKeyExists	fn. (cfscript)"
+			],
+			[
+				"show",
+				"showSpecialPlacement"
+			],
+			[
+				"seria",
+				"serializeJSON	Function (cfscript)"
+			],
+			[
+				"lastName",
+				"lastNameHeader"
+			],
+			[
+				"seri",
+				"serializeJSON	Function (cfscript)"
+			],
+			[
+				"isValid",
+				"isValidFEIN"
+			],
+			[
+				"cfscri",
+				"CFSCRIPT	Tag (cfml)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 85.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"add fol",
+				"Project: Add Folder"
+			],
+			[
+				"bootstrap drop",
+				"Snippet: Bootstrap button dropdowns"
+			],
+			[
+				"bootstrap tab",
+				"Snippet: Bootstrap basic tabs"
+			],
+			[
+				"synta",
+				"Set Syntax: HTML"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html"
+			],
+			[
+				"snipp",
+				"Snippet: html"
+			],
+			[
+				"html",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"add fold",
+				"Project: Add Folder"
+			],
+			[
+				"add folde",
+				"Project: Add Folder"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"folder",
+				"Project: Add Folder"
+			],
+			[
+				"add folder",
+				"Project: Add Folder"
+			],
+			[
+				"prety",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"packag",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"package",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"bootstrap form",
+				"Snippet: Bootstrap horizontal form"
+			],
+			[
+				"bootrap form",
+				"Snippet: Bootstrap horizontal form"
+			],
+			[
+				"add fo",
+				"Project: Add Folder"
+			],
+			[
+				"add ",
+				"Project: Add Folder"
+			],
+			[
+				"addfo",
+				"Project: Add Folder"
+			],
+			[
+				"bootstrap from",
+				"Snippet: Bootstrap basic four column grid"
+			],
+			[
+				"htmlpr",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"addo ",
+				"Project: Add Folder"
+			],
+			[
+				"addfol",
+				"Project: Add Folder"
+			],
+			[
+				"mxun",
+				"MXUnit: Run tests"
+			],
+			[
+				"mxunit",
+				"Set Syntax: MXUnit Test Results"
+			],
+			[
+				"bootstrap sc",
+				"Snippet: Bootstrap scripts reference"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"addf",
+				"Project: Add Folder"
+			],
+			[
+				"htm",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"coldfusion",
+				"ColdFusion: Insert UDF"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"bootstr",
+				"Snippet: Bootstrap primary button"
+			],
+			[
+				"htmlp",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"brows",
+				"Preferences: Browse Packages"
+			],
+			[
+				"discover",
+				"Package Control: Discover Packages"
+			],
+			[
+				"bootstrap ",
+				"Snippet: Bootstrap basic three column grid"
+			],
+			[
+				"fetch",
+				"Fetch"
+			],
+			[
+				"add f",
+				"Project: Add Folder"
+			],
+			[
+				"bootr",
+				"Snippet: Bootstrap modal"
+			],
+			[
+				"bootstrap for",
+				"Snippet: Bootstrap horizontal form"
+			],
+			[
+				"",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"boots",
+				"Snippet: Bootstrap warning button"
+			],
+			[
+				"bootstrap",
+				"Snippet: Bootstrap default button"
+			],
+			[
+				"fetch ",
+				"Fetch: Manage remote files"
+			],
+			[
+				"fet",
+				"Snippet: TDD function snippet (MXUnit)"
+			],
+			[
+				"bootstrap nav",
+				"Snippet: Bootstrap navigation bar"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"lipsum",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"run",
+				"MXUnit: Run tests"
+			],
+			[
+				"run test",
+				"MXUnit: Run tests"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"bootstrap hero",
+				"Snippet: Bootstrap hero example"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"bootstrap script",
+				"Snippet: Bootstrap scripts reference"
+			],
+			[
+				"bootstrap here",
+				"Snippet: Bootstrap hero example"
+			],
+			[
+				"bootstrap inc",
+				"Snippet: Bootstrap scripts reference"
+			],
+			[
+				"svn",
+				"SVN: Status"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"svn stat",
+				"SVN: Status"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"svn statu",
+				"SVN: Status"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 386.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/www/bootstrap2/index.html",
+		"/C/www/bootstrap2/style.css",
+		"/C/www/bootstrap2/blog/index.html",
+		"/C/www/io-2012-slides/template.html",
+		"/C/www/danvega/views/presentations/index.cfm",
+		"/C/www/danvega/views/home.cfm",
+		"/C/www/danvega/views/about/index.cfm",
+		"/C/www/bootstrap2/README.md",
+		"/C/www/bootstrap2/slide_config.js",
+		"/C/www/bootstrap2/demos/less/css/nested.less",
+		"/C/www/bootstrap2/demos/less/nested.html",
+		"/C/www/bootstrap2/demos/less/mixins.html",
+		"/C/www/bootstrap2/demos/less/variables.html",
+		"/C/www/bootstrap2/demos/less/css/variables.less",
+		"/C/www/bootstrap2/demos/start/index.html",
+		"/C/www/bootstrap2/demos/responsive/test.html",
+		"/C/www/bootstrap2/demos/responsive/navbar.html",
+		"/C/www/bootstrap2/demos/jquery/jquery-1.8.2.min.js",
+		"/C/Users/dvega/AppData/Roaming/Sublime Text 2/Packages/User/HTML/slide-note.sublime-snippet",
+		"/C/Users/dvega/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/dvega/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/dvega/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/dvega/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/dvega/AppData/Roaming/Sublime Text 2/Packages/User/HTML/html5.sublime-snippet",
+		"/C/Users/dvega/AppData/Roaming/Sublime Text 2/Packages/HTML/html.sublime-snippet",
+		"/C/www/bootstrap2/ConvertMGAtoMBU",
+		"/C/www/bootstrap2/theme/css/default.css",
+		"/C/www/bootstrap2/demos/scaffolding/responsive/navbar.html",
+		"/C/www/bootstrap2/demos/scaffolding/responsive/test.html",
+		"/C/www/bootstrap2/demos/scaffolding/responsive/responsive.css",
+		"/C/www/bootstrap2/demos/bootstrap/css/bootstrap.css",
+		"/C/www/bootstrap2/js/slide-controller.js",
+		"/C/www/bootstrap2/js/slide-deck.js",
+		"/C/www/bootstrap2/js/slides.js",
+		"/C/www/bootstrap2/js/order.js",
+		"/C/www/bootstrap2/js/modernizr.custom.45394.js",
+		"/C/www/bootstrap2/js/hammer.js",
+		"/C/www/bootstrap2/scripts/md/README.md",
+		"/Z/devwwwsteriscom/com/steris/matrix/DeviceMatrix.cfc",
+		"//mtrweb01/websites$/steriscom/com/steris/matrix/DeviceMatrix.cfc",
+		"/C/www/bootstrap2/js/require-1.0.8.min.js",
+		"/C/www/bootstrap2/scripts/md/slides.md",
+		"/C/www/bootstrap2/scripts/md/render.py",
+		"/C/www/bootstrap2/scripts/md/base.html",
+		"/C/www/bootstrap2/serve.sh",
+		"/C/www/bootstrap2/config.rb",
+		"/C/www/bootstrap2/app.yaml",
+		"/C/www/bootstrap2/theme/scss/_base.scss",
+		"/C/www/bootstrap2/theme/scss/default.scss",
+		"/C/www/bootstrap2/theme/scss/phone.scss",
+		"/C/Users/dvega/Desktop/CreateMBU",
+		"/C/www/bootstrap2/template.html",
+		"/C/www/bootstrap2/.gitignore",
+		"/C/www/bootstrap2-preso/index.html",
+		"/C/www/bootstrap2-preso/css/styles.css",
+		"/C/www/bootstrap2-preso/js/gsstatcounter.js",
+		"/C/www/bootstrap2-preso/js/FusionCharts.js",
+		"/C/www/bootstrap2-preso/js/gs_statcounter.js",
+		"/C/www/knukonceptz/default/includes/themes/bootstrap/display_objects/custom/slatwall/product/homeFeaturedProducts.cfm",
+		"/C/www/knukonceptz/default/includes/themes/bootstrap/display_objects/custom/slatwall/product/SlatwallSmartListPager.cfm",
+		"/C/www/knukonceptz/default/includes/themes/bootstrap/display_objects/custom/slatwall/product/listcontentproducts.cfm",
+		"/C/www/knukonceptz/default/includes/themes/bootstrap/css/core/theme.css",
+		"/C/www/knukonceptz/default/includes/themes/bootstrap/templates/home.cfm",
+		"/C/www/knukonceptz/plugins/Slatwall/tags/SlatwallSmartListPager.cfm",
+		"/C/www/knukonceptz/default/includes/themes/bootstrap/templates/inc/header.cfm",
+		"/C/www/knukonceptz/default/includes/themes/bootstrap/templates/inc/html_head.cfm",
+		"/C/www/knukonceptz/plugins/Slatwall/com/utility/SlatwallScope.cfc",
+		"/C/www/bootstrap2-preso/js/slides.js",
+		"/Z/devintranetsteriscom/catalogadmin/handlers/Dashboard.cfc",
+		"/Z/devintranetsteriscom/catalogadmin/views/dashboard/index.cfm",
+		"/C/www/hyrule/.gitignore",
+		"//mtrweb05/websites$/intranetsteriscom/catalogadmin/layouts/Layout.Main.cfm",
+		"//mtrweb05/websites$/intranetsteriscom/catalogadmin/layouts/ProductLayout.cfm",
+		"//mtrweb05/websites$/intranetsteriscom/catalogadmin/handlers/Dashboard.cfc",
+		"//mtrweb05/websites$/intranetsteriscom/catalogadmin/views/dashboard/index.cfm",
+		"//mtrdev04/redirect$/IsapiRewrite4.ini",
+		"//mtrweb01/redirect$/IsapiRewrite4.ini",
+		"//mtrweb02/redirect$/IsapiRewrite4.ini",
+		"/C/www/sftwitter/grails-app/conf/ApplicationResources.groovy",
+		"/C/www/sftwitter/grails-app/views/index.gsp",
+		"/C/www/sftwitter/grails-app/views/home/index.gsp",
+		"/C/www/sftwitter/grails-app/conf/BuildConfig.groovy",
+		"/C/www/sftwitter/grails-app/views/layouts/main.gsp",
+		"/C/www/sftwitter/grails-app/controllers/org/twitter/HomeController.groovy",
+		"/C/www/sftwitter/grails-app/conf/BootStrap.groovy",
+		"/C/www/sftwitter/grails-app/controllers/org/twitter/PublicController.groovy",
+		"/C/www/sftwitter/grails-app/domain/org/twitter/User.groovy",
+		"/C/www/sftwitter/grails-app/controllers/LoginController.groovy",
+		"/C/www/sftwitter/grails-app/conf/Config.groovy",
+		"/C/www/sftwitter/grails-app/controllers/HomeController.groovy",
+		"/C/www/iif.cfm",
+		"/C/www/sftwitter/target/stacktrace.log",
+		"/C/www/sftwitter/grails-app/domain/org/twitter/Role.groovy",
+		"/C/www/sftwitter/grails-app/domain/org/twitter/UserRole.groovy",
+		"/C/www/sftwitter/grails-app/conf/DataSource.groovy",
+		"/C/www/sftwitter/grails-app/conf/spring/resources.groovy",
+		"/C/www/sftwitter/web-app/css/errors.css",
+		"/C/www/sftwitter/web-app/css/main.css",
+		"/C/www/sftwitter/web-app/js/application.js",
+		"/C/www/sftwitter/web-app/WEB-INF/applicationContext.xml",
+		"/C/www/sftwitter/web-app/WEB-INF/tld/spring.tld",
+		"/C/www/sftwitter/web-app/WEB-INF/tld/grails.tld",
+		"/C/www/sftwitter/web-app/WEB-INF/sitemesh.xml",
+		"/C/www/sftwitter/grails-app/i18n/messages.properties",
+		"/C/www/sftwitter/grails-app/conf/UrlMappings.groovy",
+		"/Z/devwwwsteriscom/products/devicematrix/index.cfm",
+		"/Z/devwwwsteriscom/products/eps/index.cfm",
+		"/Z/devwwwsteriscom/products/vpro/step1.cfm",
+		"/Z/devwwwsteriscom/products/eps/step1.cfm",
+		"//mtrweb01/websites$/steriscom/products/devicematrix/index.cfm",
+		"//mtrweb01/websites$/steriscom/_exceptionHandler.cfm",
+		"//mtrweb01/websites$/steriscom/error.cfm",
+		"/Z/devwwwsteriscom/config/coldspring.xml",
+		"//mtrweb01/websites$/steriscom/config/coldspring.xml",
+		"/Z/devwwwsteriscom/css/devicematrix.css",
+		"/C/Users/dvega/Downloads/bootstrap (6)/bootstrap/js/bootstrap.js",
+		"/Z/devwwwsteriscom/temp/popover/index.html",
+		"/Z/devwwwsteriscom/tags/1ColumnLayout.cfm",
+		"/Z/devwwwsteriscom/products/vpro/index.cfm",
+		"/Z/devintranetsteriscom/devicematrix/views/user/add.cfm",
+		"/C/www/bootstrap/navigation/index.html",
+		"/Z/devwwwsteriscom/temp/popover/popover.html",
+		"/C/Users/dvega/Desktop/popover.html",
+		"/C/www/javascript/each/index.html",
+		"/C/www/giftmob/index.html",
+		"/C/www/html5la/index.html",
+		"/C/www/angularjs/templates/index.html",
+		"/C/www/bootstrap/demos/start/index.html"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"adobe",
+			"note",
+			"forms",
+			"font",
+			"note",
+			"container",
+			"                        <",
+			">\n",
+			"aside",
+			"aside	",
+			"segue",
+			"ACTIVE + 1",
+			";\n",
+			"dark",
+			"segue",
+			"quote",
+			"segue",
+			"Challenges",
+			"small",
+			"right",
+			"images",
+			"cfaddict",
+			"important",
+			"eps",
+			"placement",
+			"popover",
+			"/></",
+			"005183",
+			"#\">",
+			"results-data-eps",
+			"local",
+			"Comments",
+			"m",
+			"20px",
+			"}",
+			"list",
+			"getSmartList",
+			"url",
+			"eps",
+			"important",
+			"getImage",
+			"productTitleString",
+			"getTitle",
+			"listing",
+			"productList",
+			"product",
+			"getSmartList",
+			"form",
+			"--->\n",
+			"knukonceptz",
+			"high",
+			";\n",
+			"			\n",
+			">",
+			"100",
+			"/cfide",
+			"jcaito@1stcomp.com",
+			"⇧⌘",
+			"⌥⌘",
+			")) ",
+			"strip",
+			"save_form",
+			"save_location",
+			"getwaiver",
+			"save_officer",
+			"../../img/",
+			"img",
+			"modal",
+			"navbar",
+			"askEffectiveDate()",
+			"LoadingWindow_div",
+			"ET_EntityType",
+			"(\n",
+			"vpro",
+			"label",
+			"Vpro",
+			"11",
+			"container",
+			"<cfset ",
+			"content",
+			"container",
+			"go",
+			"alert",
+			"insertOwnerOfficer",
+			"OfficerWindow",
+			"cfwindow",
+			"getInsuredClassCodes",
+			"listproduct",
+			"validator",
+			"                console.log(required.length);",
+			"fbootstrapp",
+			"files",
+			"img",
+			"background",
+			"img",
+			"google",
+			"visible-phone",
+			"div.span",
+			"margin-left",
+			"first-child",
+			".span",
+			".span12",
+			".row",
+			".span12",
+			".row",
+			"}",
+			">",
+			"condensed",
+			".</",
+			"condensed",
+			";",
+			"	",
+			";",
+			"project",
+			"folder"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ACTIVE = 1",
+			"*****************",
+			"dvega@riskexchange.com",
+			"&#8984",
+			"../../images/",
+			"Eps",
+			"",
+			"method"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"demos/start/inde",
+				"demos/start/index.html"
+			],
+			[
+				"config",
+				"slide_config.js"
+			],
+			[
+				".csv",
+				"www/giftmob/subscribers.csv"
+			],
+			[
+				"tables",
+				"demos/css/tables/tables/striped.html"
+			],
+			[
+				"layouts/fi",
+				"demos/layouts/fixed.html"
+			],
+			[
+				"layouts/",
+				"demos/layouts/fluid.html"
+			],
+			[
+				"controller.cfm",
+				"migration/Application/PolicyMgmt/controller.cfm"
+			],
+			[
+				"index.html",
+				"sandbox/index.html"
+			],
+			[
+				"safesen",
+				"mainline/SafeSendersList.txt"
+			],
+			[
+				"applicat",
+				"maverick/Application.cfc"
+			],
+			[
+				"/applic",
+				"Tests/Application.cfc"
+			],
+			[
+				"applicaiton",
+				"migration/Application/DocumentationMgmt/Intranet/CheckAutoNarration.cfm"
+			],
+			[
+				"applica",
+				"migration/application.cfc"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 310.0,
+	"status_bar_visible": true
+}
